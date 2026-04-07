@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#1f2e5b",
+                    "inverse-surface": "#e5e2e1",
+                    "background": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#364573",
+                    "on-secondary-fixed": "#40000b",
+                    "secondary": "#ffb3b5",
+                    "tertiary-fixed": "#dce1ff",
+                    "on-tertiary-container": "#2d3b69",
+                    "on-primary-container": "#4f3b00",
+                    "on-primary-fixed": "#251a00",
+                    "on-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "surface-container": "#201f1f",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-fixed": "#071845",
+                    "surface-container-high": "#2a2a2a",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb3b5",
+                    "surface-container-highest": "#353534",
+                    "on-primary": "#3f2e00",
+                    "tertiary-container": "#99a7dc",
+                    "surface-variant": "#353534",
+                    "tertiary": "#b6c4fb",
+                    "secondary-container": "#8e0f28",
+                    "on-primary-fixed-variant": "#5a4300",
+                    "on-error": "#690005",
+                    "error-container": "#93000a",
+                    "surface-bright": "#3a3939",
+                    "on-secondary-fixed-variant": "#8e0f28",
+                    "on-secondary": "#680018",
+                    "outline-variant": "#4d4639",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface": "#131313",
+                    "primary": "#e5c374",
+                    "inverse-primary": "#745b17",
+                    "surface-tint": "#e5c374",
+                    "primary-container": "#c5a55a",
+                    "on-secondary-container": "#ff989d",
+                    "outline": "#99907f",
+                    "on-surface-variant": "#d0c5b4",
+                    "tertiary-fixed-dim": "#b6c4fb",
+                    "primary-fixed-dim": "#e5c374",
+                    "secondary-fixed": "#ffdada",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#ffdf99"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .tonal-carving { background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(14,14,14,1) 100%); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .gold-gradient { background: linear-gradient(135deg, #e5c374 0%, #c5a55a 100%); }
+        .text-shadow-hero { text-shadow: 0 4px 12px rgba(0,0,0,0.6); }
+        body { background-color: #131313; color: #e5e2e1; }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 bg-transparent backdrop-blur-md">
+<div class="text-2xl font-['Noto_Serif'] font-bold text-[#e5c374] tracking-widest">
+            Auerbachs Keller
+        </div>
+<div class="hidden md:flex gap-8 items-center font-['Noto_Serif'] tracking-tight text-sm uppercase">
+<a class="text-[#e5c374] border-b border-[#e5c374] pb-1" href="#">Menus</a>
+<a class="text-white/80 hover:text-[#e5c374] transition-colors duration-400" href="#">Venues</a>
+<a class="text-white/80 hover:text-[#e5c374] transition-colors duration-400" href="#">History</a>
+<a class="text-white/80 hover:text-[#e5c374] transition-colors duration-400" href="#">Reservations</a>
+</div>
+<button class="bg-[#e5c374] text-[#3f2e00] px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-[#c5a55a] transition-all duration-400 active:scale-95">
+            Tisch reservieren
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="Cinematic wide shot of an ancient vaulted brick wine cellar dining room with warm candlelight and elegantly set tables at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQwlozCwefWtsjVU_Gu3lbnkejKbje62r6XwKU6i3x0yxBUvO-F6eTBYzSgy3We_CgASRjtbLB517ltLPD5XLmV0OrcYdABUbce5zXrSex1n7xu8ACowP-I67nfaVjU-ieoyd3RNP6cvt5MdSSBqC4DPkgM-IlX6pXQ0GfGX93EXSi_ZzDTzFOvFiye7_JPdCFz1FPnqsVOYVCMEG47mUe9ZZdKm_K8JEBuorshChiV38N-GWF6KPLRqJZRCKM4onTGjX-ad3ZCFs"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-5xl">
+<span class="inline-block mb-6 font-label text-sm uppercase tracking-[0.4em] text-primary-fixed-dim">Seit 1525 in Leipzig</span>
+<h1 class="font-headline text-5xl md:text-8xl lg:text-9xl mb-12 text-shadow-hero leading-tight">
+                Wo Geschichte <br/> <span class="italic text-primary">lebendig</span> wird
+            </h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="gold-gradient text-on-primary px-10 py-4 font-bold uppercase tracking-widest text-sm hover:opacity-90 transition-opacity">
+                    Tisch reservieren
+                </button>
+<button class="border border-outline-variant/40 bg-white/5 backdrop-blur-sm text-primary px-10 py-4 font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition-all">
+                    Entdecken
+                </button>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-30">
+<span class="material-symbols-outlined text-4xl animate-bounce">expand_more</span>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="w-full py-12 bg-surface-container-lowest border-y border-white/5">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 items-center">
+<div class="text-center flex flex-col gap-1">
+<span class="font-headline text-2xl text-primary">1525</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Gegründet</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<div class="flex justify-center text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="font-headline text-2xl text-on-surface">4.4 Sterne</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<span class="font-headline text-2xl text-on-surface">9500+</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Rezensionen</span>
+</div>
+<div class="text-center flex flex-col gap-1">
+<span class="font-headline text-2xl italic text-primary">Goethe</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Stammgast</span>
+</div>
+</div>
+</section>
+<!-- Venue Cards -->
+<section class="py-32 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary-fixed-dim">Kulinarik &amp; Ambiente</span>
+<h2 class="font-headline text-4xl md:text-5xl mt-4">Unsere Säle</h2>
+</div>
+<div class="h-px bg-outline-variant/30 flex-grow mx-12 hidden md:block mb-4"></div>
+<p class="max-w-xs font-body text-on-surface-variant text-sm leading-relaxed">
+                    Vom urigen Keller bis zur mondänen Bar – erleben Sie sächsische Gastlichkeit in historischem Gewand.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<!-- Card 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-low transition-all duration-700 hover:z-10">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-1000" data-alt="Interior of the Grosser Keller restaurant with long wooden tables, arched brick ceilings, and traditional Saxon décor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQUinL5Jsfx4tguNzXqzfKRhThRDrmyjWFQGaKTMSiFVF7_wAsp0MUsthfxdyDRxB0Nqttf09x4tn-XjePH7-0o8A7FtzaoRNaoCuAXNK9nm4vQpDos209-SqTNCbaG7ecSkixpxDgDzjbXI2xiKR5DM4AidkK0EjzyH8dC16tm0U5NMuGQhNs2I8l86d__skM-lQ0pyqDhbz7vA550X14dvvVa7N8RkhlLRZZ-hxJnaFShQhZSKaiReOZZpaZ1EkuvCp7zbfDgDY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10 w-full">
+<h3 class="font-headline text-2xl mb-4 text-primary">Grosser Keller</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Authentische sächsische Küche unter historischen Deckengewölben.</p>
+<button class="text-xs uppercase font-bold tracking-widest border-b border-primary/40 pb-1 group-hover:border-primary transition-all">Ansehen</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-lowest transition-all duration-700 hover:z-10">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-1000" data-alt="Dark, moody and intimate historic wine cellar with dimly lit wooden panels and candlelight, reflecting 16th-century luxury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB24ROkNaIN4tx40k2V7OTSZ77befgyi-bkzwEYqE-aKI2G2YcYx9mYaBOcDLCwefosx6hMUlsCniW_byEUfAE8BHAIglyjLqR0jFAnOKiZmwJZQPpFFNUtRsuQlEPikTP8B_dQO7hzPaxCdQPse0NJqa3Y2H7mC35gfYYXvXwZe022fOIRygZtnqIr89DaXR6yAkQVdbUzBUqyMPVQ6IwtFJ5KN0d07C9ipSbgOBYfYrklubJuJOjafEmHiR4skZM0W-UuwW1RaEE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10 w-full">
+<h3 class="font-headline text-2xl mb-4 text-primary">Weinstuben</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Intime Räume aus dem 16. bis 19. Jahrhundert für besondere Anlässe.</p>
+<button class="text-xs uppercase font-bold tracking-widest border-b border-primary/40 pb-1 group-hover:border-primary transition-all">Ansehen</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container-low transition-all duration-700 hover:z-10">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-1000" data-alt="Modern Mephisto Bar with elegant cocktails, red neon accents, and dark leather seating in a historic cellar setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh_Cd91uhTr4NOSYOrS99QfHGTEYzu-QSho5RsgVMPg7-kH7eo9pS8flpbZzFJxJ07Wa48YhrYOFpERqQGuACET5AqUBTYg6TIwAJlJNDTpDz2_MlOSCT8AtoofZpOvS8ek-aVdSV61QV7GRmxAXk08a7zBussYLs4TK1ADYEDaGcSqddPN6BVgxg2DxSSokNbIZAyoN-NOyGsvLns0kmzXoPlvsoiow1rpq4-uzAtLA_wMM2N5JBVgd30spRgfCOj-1u6OmA4Q4k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10 w-full">
+<h3 class="font-headline text-2xl mb-4 text-primary">Mephisto Bar</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Exquisite Cocktails und Kaffeespezialitäten in legendärem Ambiente.</p>
+<button class="text-xs uppercase font-bold tracking-widest border-b border-primary/40 pb-1 group-hover:border-primary transition-all">Ansehen</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="w-full py-32 px-6 bg-secondary-container text-on-secondary-container">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-6xl opacity-30 mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline text-3xl md:text-5xl italic leading-tight text-[#e5c374]">
+                "Wer nach Leipzig zur Messe gereist, <br class="hidden md:block"/> ohne auf Auerbachs Hof zu gehen, <br class="hidden md:block"/> der schweige nur still, denn das beweist: <br class="hidden md:block"/> Er hat Leipzig nicht gesehen."
+            </p>
+<div class="mt-12 flex flex-col items-center">
+<div class="w-12 h-px bg-[#e5c374] mb-4"></div>
+<span class="font-label text-sm uppercase tracking-[0.3em] text-[#e5c374]">Johann Wolfgang von Goethe</span>
+</div>
+</div>
+</section>
+<!-- Menu Preview -->
+<section class="py-32 px-6 bg-background">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 text-[10rem] font-headline opacity-5 select-none pointer-events-none">1525</div>
+<img class="w-full h-auto aspect-square object-cover" data-alt="Exquisitely plated traditional Saxon dish with succulent roasted meat, seasonal vegetables, and rich sauce on a dark designer plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwRcdI7YEyWdYDv6r8jp7OCKRkNtLh4KnrGIxpsu4ZgB-82ReqtWLFBMm25_nZK7YlhsP40xUgN9-OWOLTexVp4hG2Yc1t8vg85xufebxIwb5jAcJ26qZJU8lvWZtGq2ehITpha6_MBJaDYlsbRLDkirj5OOMQQOKxJbIZvicnKvE-43R4H-QEZMSiEPg2Dk8TmGS9oc6005LBopTY_aZyaJ_j_RTQ_FLa9MTVlena_m8E8ANhQYna9Ww5tTBYiEA4dEtOA3IgQac"/>
+<div class="absolute -bottom-6 -right-6 p-8 bg-surface-container-high border border-white/5">
+<p class="font-headline italic text-xl text-primary">Tradition, neu interpretiert.</p>
+</div>
+</div>
+<div class="space-y-16">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary">Gastronomie</span>
+<h2 class="font-headline text-5xl mt-4">Die Speisekarte</h2>
+</div>
+<div class="space-y-12">
+<div class="flex justify-between items-end group cursor-pointer">
+<div>
+<h3 class="font-headline text-3xl group-hover:text-primary transition-colors">A la carte</h3>
+<p class="text-on-surface-variant text-sm mt-2">Sächsische Klassiker und saisonale Spezialitäten.</p>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="flex justify-between items-end group cursor-pointer">
+<div>
+<h3 class="font-headline text-3xl group-hover:text-primary transition-colors">Menüs</h3>
+<p class="text-on-surface-variant text-sm mt-2">Sorgfältig kuratierte 3- bis 5-Gänge-Folgen.</p>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="flex justify-between items-end group cursor-pointer">
+<div>
+<h3 class="font-headline text-3xl group-hover:text-primary transition-colors">Buffets</h3>
+<p class="text-on-surface-variant text-sm mt-2">Für Gruppen und festliche Anlässe ab 20 Personen.</p>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<button class="border border-primary text-primary px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-on-primary transition-all">
+                    Gesamte Karte laden
+                </button>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1 space-y-6">
+<h2 class="font-headline text-4xl">Was unsere Gäste sagen</h2>
+<div class="flex items-center gap-4">
+<span class="font-headline text-7xl text-primary">4.4</span>
+<div class="flex flex-col">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Basierend auf 9.500+ Bewertungen</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-10 bg-surface-container border-l-2 border-primary">
+<p class="font-body text-on-surface italic mb-8">"Ein absolutes Muss in Leipzig. Das Ambiente ist einmalig und das Essen war hervorragend. Besonders die Rouladen sind sehr zu empfehlen!"</p>
+<div class="flex justify-between items-center">
+<span class="font-label text-xs uppercase tracking-widest font-bold">Markus T.</span>
+<span class="text-[10px] text-on-surface-variant">Vor 2 Wochen</span>
+</div>
+</div>
+<div class="p-10 bg-surface-container border-l-2 border-primary">
+<p class="font-body text-on-surface italic mb-8">"History meets high-end dining. The service was impeccable and the historical surroundings make you feel like you've traveled back in time."</p>
+<div class="flex justify-between items-center">
+<span class="font-label text-xs uppercase tracking-widest font-bold">Sarah L.</span>
+<span class="text-[10px] text-on-surface-variant">Vor 1 Monat</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map Section -->
+<section class="bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 md:p-24 space-y-12">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary">Kontakt</span>
+<h2 class="font-headline text-5xl mt-4">Besuchen Sie uns</h2>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-2">Adresse</h4>
+<p class="font-body text-xl">Grimmaische Str. 2-4<br/>04109 Leipzig, Deutschland</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-2">Reservierung</h4>
+<p class="font-body text-xl">+49 341 216 100</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-2">Öffnungszeiten</h4>
+<p class="font-body text-xl">Täglich 11:30 – 24:00 Uhr</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[500px] lg:h-auto grayscale contrast-125 brightness-75 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern dark-themed map of central Leipzig showing the historic district around Grimmaische Strasse with gold-accented landmarks" data-location="Leipzig" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIZjC8ddLtrADwUz9F4woJtb_k14E1pE60WGqoAw_0-G0vOb1aSnC9a7e1hbDu2iXtIb723L8fWmYb8pirjQ5XbYIGIG2cjkvmBg4LraExGPadjA82TjvCYrZer1Xcb7LIipl-PAVnAWqen0MMALGQIGXh5n739fQyuuvQHzjE05c3y4mkRp2N1V3xpfLgWzsqOauJS_8FuWF-XGZtVUVs27x-asl-Ry82hjImBWjbl7JagRszYJH8TaOA1TaKH8shKvLtfyMCnng"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-6 md:px-12 flex flex-col items-center gap-8 border-t border-white/5 bg-[#0e0e0e]">
+<div class="text-xl font-['Noto_Serif'] text-[#e5c374] tracking-[0.3em]">AUERBACHS KELLER</div>
+<div class="flex flex-wrap justify-center gap-12 font-['Manrope'] text-xs tracking-wider uppercase text-gray-500">
+<a class="hover:text-white transition-colors duration-400" href="#">Impressum</a>
+<a class="hover:text-white transition-colors duration-400" href="#">Datenschutz</a>
+<a class="hover:text-white transition-colors duration-400" href="#">Kontakt</a>
+<a class="hover:text-white transition-colors duration-400" href="#">Presse</a>
+</div>
+<div class="w-full h-px bg-white/5 max-w-4xl"></div>
+<div class="text-center space-y-4">
+<p class="font-['Manrope'] text-[10px] tracking-wider uppercase text-gray-600 max-w-2xl">
+                © 1525-2024 Auerbachs Keller Leipzig. Grimmaische Str 2-4, 04109 Leipzig. +49 341 216 100
+            </p>
+<div class="flex justify-center gap-6">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-lg">wine_bar</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-lg">restaurant</span></a>
+</div>
+</div>
+</footer>
+</body></html>

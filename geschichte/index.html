@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#364573",
+                    "tertiary": "#b6c4fb",
+                    "surface-container-highest": "#353534",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#8e0f28",
+                    "surface-container": "#201f1f",
+                    "on-primary-container": "#4f3b00",
+                    "inverse-on-surface": "#313030",
+                    "on-tertiary": "#1f2e5b",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#99907f",
+                    "on-surface": "#e5e2e1",
+                    "surface": "#131313",
+                    "surface-dim": "#131313",
+                    "on-secondary-container": "#ff989d",
+                    "on-surface-variant": "#d0c5b4",
+                    "secondary-fixed-dim": "#ffb3b5",
+                    "on-tertiary-fixed": "#071845",
+                    "on-secondary-fixed": "#40000b",
+                    "primary-fixed-dim": "#e5c374",
+                    "outline-variant": "#4d4639",
+                    "on-primary-fixed": "#251a00",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "background": "#131313",
+                    "tertiary-container": "#99a7dc",
+                    "on-secondary": "#680018",
+                    "primary-fixed": "#ffdf99",
+                    "inverse-primary": "#745b17",
+                    "on-primary-fixed-variant": "#5a4300",
+                    "secondary": "#ffb3b5",
+                    "secondary-container": "#8e0f28",
+                    "on-secondary-container": "#ff989d",
+                    "on-primary": "#3f2e00",
+                    "surface-variant": "#353534",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-bright": "#3a3939",
+                    "primary-container": "#c5a55a",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-fixed": "#ffdada",
+                    "on-error": "#690005",
+                    "tertiary-fixed-dim": "#b6c4fb",
+                    "surface-tint": "#e5c374",
+                    "primary": "#e5c374",
+                    "tertiary-fixed": "#dce1ff",
+                    "surface-container-low": "#1c1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-hero {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .tonal-carving {
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-transparent backdrop-blur-md dark:bg-neutral-950/80">
+<div class="text-2xl font-['Noto_Serif'] font-bold text-yellow-600 dark:text-[#e5c374] tracking-widest">
+            AUERBACHS KELLER
+        </div>
+<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] tracking-tight text-sm uppercase">
+<a class="text-white/80 hover:text-yellow-600 dark:hover:text-[#e5c374] transition-colors duration-400" href="#">Home</a>
+<a class="text-white/80 hover:text-yellow-600 dark:hover:text-[#e5c374] transition-colors duration-400" href="#">Menus</a>
+<a class="text-white/80 hover:text-yellow-600 dark:hover:text-[#e5c374] transition-colors duration-400" href="#">Venues</a>
+<a class="text-yellow-600 dark:text-[#e5c374] border-b border-yellow-600 dark:border-[#e5c374] pb-1 transition-colors duration-400" href="#">History</a>
+<a class="text-white/80 hover:text-yellow-600 dark:hover:text-[#e5c374] transition-colors duration-400" href="#">Reservations</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors duration-400 active:scale-95">
+            Tisch reservieren
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Mephisto and Faust sculpture" class="w-full h-full object-cover brightness-50" data-alt="Cinematic low-angle close-up of the bronze Mephisto and Faust sculpture in Auerbachs Keller, dramatic warm spotlighting, dark vaulted cellar background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMaDJMKm4rbi2oEYmT-I5QGViBo4mfm7w5db97kYbmXTuJkiyPQCldu4VtCQhQTEB6ihucRSu7JfPile1dIdHITrAUHk2alhhO8FIZeeTOp51liGw2wniQvyEA3XgVE-VNqqY9TaN1BEsS4nvs82xTw-zIhk7mjimWsALRkHSVkItfVlEBwK4VtNgnUhFe5FWTKnEWLUJoubcDSJtV5SKG_aj3CaPdbQ229_3a8xs_gDycCLdavRNWu9f0v9oW81oW4Hg1o71r9Hk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40"></div>
+</div>
+<div class="relative z-10 text-center max-w-5xl px-6">
+<span class="block font-label text-primary tracking-[0.3em] uppercase text-sm mb-6">Est. 1525</span>
+<h1 class="text-6xl md:text-8xl font-headline text-white mb-8 leading-tight tracking-tight text-shadow-hero">
+                    Wo Literatur <br/><span class="italic font-normal">Geschichte</span> schrieb
+                </h1>
+<p class="text-xl md:text-2xl font-light text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    Goethes Inspiration und die Sage vom Weinfassritt
+                </p>
+</div>
+<!-- Background Watermark -->
+<div class="absolute bottom-12 right-12 text-[12rem] font-headline font-bold text-surface-bright opacity-5 pointer-events-none select-none">
+                1525
+            </div>
+</section>
+<!-- Section 1: Ein Treffpunkt der Geister -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 space-y-8">
+<h2 class="text-4xl md:text-5xl font-headline text-primary">Ein Treffpunkt der Geister</h2>
+<div class="space-y-6 text-on-surface-variant leading-loose font-light">
+<p>
+                            Als der junge Johann Wolfgang Goethe im Jahr 1765 sein Jurastudium in Leipzig antrat, suchte er nicht nur in den Hörsälen nach Wissen, sondern fand die wahre Seele der Stadt in den Gewölben von Auerbachs Keller. Hier, inmitten des lebendigen Austauschs von Gelehrten, Händlern und Weltenbummlern, sog er die Atmosphäre auf, die später Weltliteratur werden sollte.
+                        </p>
+<p>
+                            Die Legende besagt, dass Goethe hier zum ersten Mal von der Sage des Dr. Faust hörte, der auf einem Weinfass aus dem Keller geritten sein soll. Diese Begegnung mit dem Mystischen prägte sein Verständnis von Licht und Schatten, von menschlicher Begierde und dem Pakt mit dem Teufel.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="relative group">
+<div class="absolute -inset-4 border-l border-t border-primary/20 pointer-events-none"></div>
+<img alt="Vintage Sketch" class="w-full grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="An 18th-century style vintage sketch of a bustling historic tavern cellar with vaulted ceilings and long wooden tables, warm sepia tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_WY3cBjWtKzUMI_1Q3WVHULcYOkTN2fCBJU0rMRxtbWrZ3D8WECFs3MHIZoq_GaLxMmAyRobLuvFTsR_Lfc5jZHGRXbrMBUDLQ-hSR_hITVApGr3tQrgoRfuGZDOtH2dJ7h3OYveNlVXx_KnAEn4H2Zazac4aiBDfUSaVv2oVi0jCzGz5d0IRAidZBcL8fF4pxKLONMvG-nMvw98D_gIEa83QS4ZSBsCYaUx9HweR776CAv3RDP7L_3V0f1_vpZv88OsWEr34_aY"/>
+<div class="absolute bottom-4 right-4 bg-surface px-4 py-2 font-label text-[10px] tracking-widest text-primary uppercase">
+                            Originalskizze um 1765
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Faust & Mephisto -->
+<section class="relative py-40 bg-secondary-container overflow-hidden tonal-carving">
+<div class="container mx-auto px-12 md:px-24">
+<div class="max-w-4xl mx-auto text-center">
+<div class="mb-12 inline-block p-4 border-y border-primary/30">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+</div>
+<h3 class="text-primary-fixed-dim font-label tracking-[0.2em] uppercase text-sm mb-6">Auszug aus Faust I</h3>
+<blockquote class="text-3xl md:text-5xl font-headline italic text-on-primary-fixed leading-tight mb-12">
+                        "Mein Leipzig lob' ich mir! <br/>Es ist ein klein Paris und bildet seine Leute."
+                    </blockquote>
+<p class="text-on-surface text-lg font-light leading-relaxed max-w-2xl mx-auto opacity-90">
+                        In der Szene „Auerbachs Keller in Leipzig“ lässt Goethe Mephisto und Faust auf eine Gruppe feiernder Studenten treffen. Hier beweist Mephisto seine magischen Kräfte, indem er Wein aus den Tischen fließen lässt – eine direkte Hommage an die Magie dieses Ortes.
+                    </p>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</section>
+<!-- Section 3: 500 Jahre Erbe (Timeline) -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col items-center mb-24">
+<h2 class="text-5xl font-headline text-white mb-4">500 Jahre Erbe</h2>
+<div class="w-24 h-px bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6 pt-12 border-t border-outline-variant">
+<span class="text-4xl font-headline text-primary block">1525</span>
+<h4 class="text-xl font-bold uppercase tracking-widest text-on-surface">Die Gründung</h4>
+<p class="text-on-surface-variant font-light text-sm leading-relaxed">
+                            Heinrich Stromer von Auerbach beginnt im Keller seines Hauses Wein auszuschenken. Der Grundstein für eine Legende wird gelegt.
+                        </p>
+</div>
+<div class="space-y-6 pt-12 border-t border-primary">
+<span class="text-4xl font-headline text-primary block">1765</span>
+<h4 class="text-xl font-bold uppercase tracking-widest text-on-surface">Goethes Ära</h4>
+<p class="text-on-surface-variant font-light text-sm leading-relaxed">
+                            Der junge Student Goethe besucht regelmäßig den Keller. Die Eindrücke und Erzählungen inspirieren ihn zum „Faust“.
+                        </p>
+</div>
+<div class="space-y-6 pt-12 border-t border-outline-variant">
+<span class="text-4xl font-headline text-primary block">Heute</span>
+<h4 class="text-xl font-bold uppercase tracking-widest text-on-surface">Weltruhm</h4>
+<p class="text-on-surface-variant font-light text-sm leading-relaxed">
+                            Als eine der bekanntesten Gaststätten der Welt bewahrt Auerbachs Keller das kulturelle Erbe Leipzigs für Gäste aus aller Welt.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="bg-surface-container-lowest py-24">
+<div class="flex flex-col md:flex-row h-[700px]">
+<div class="flex-1 group relative overflow-hidden">
+<img alt="Goethe-Zimmer Detail" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Interior of the opulent Goethe-Zimmer at Auerbachs Keller, deep wood paneling, ornate chandelier, classical paintings, elegant furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdier1qBQNw4p91uWv3hLzfX3DT5rjQ8eN1ZBytdqXCfDyD7bkpUKmKSB_jYtSAXdDXzTD9hAbiLG1r9RHJn1o-dr9BUSkSnrac5CZF0VEpQfAPfs6hz9NjG9SQT3MesOrbA158S1a_NsK_wulD-SSeoXlKa8gZStVuzjAIXsW5tVPeMN32Ho66nca5drJelHp-j3pljC7_-yhcfnkmfwqar4lachsAU5BdVJIVb51E8Tq_qAvA4RFmaeEcFpi7G3qJOiIdrFAPyg"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-label uppercase tracking-widest text-sm">Das Goethe-Zimmer</span>
+</div>
+</div>
+<div class="flex-1 group relative overflow-hidden">
+<img alt="Historical Artifacts" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Close-up of historical artifacts including an old leather-bound book and a gold wine chalice on a dark oak surface, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGkNilReIqvlAyvUWbERNctRCN_jH60znh-iUYN_90MQeqxmCrtIVfkec7mhj_yXgLa4KK8GklylvWbE2DREhcgj3hEqqApU710VPS8qgExt7iCxOgL24kPYmO41rc0UtaKr9Iwel4InMdPC5Xmsu1FdKVLeSvtnfimyIZB9XtxAgeCX-hr3Xsz6oqBMBDRBYmKsByZewl4g20eZ5tpRLxy6Q0F3W5h94z9cC051tC_g6g5FGdObTpIcflHuDkLV1U6-i6CYp8hi4"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-label uppercase tracking-widest text-sm">Historische Schätze</span>
+</div>
+</div>
+<div class="flex-1 group relative overflow-hidden">
+<img alt="The Cellar Atmosphere" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Wide shot of the historic vault architecture of Auerbachs Keller, candlelight ambiance, rows of heavy wooden tables, mystical atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl_jvhrM-WDxsFAn5R3yGWBM5MZRpFILaIoM4fkBanLCGY0VbS7fTG6XuyglCDLJTW2WDI5JnD6-i6QcFbVKT3ok1vUoLQVSuhtkIo3qwWQDlKc-_fXn0GDuGTJ7ilrzUZ5OMpCYD3CBBEQEYPYwJye03edVbEx9Wr-TlGHujfFDCfNWZG2oGpV0Rj2sDvgsy7n2HhniY6mCJgAWnMdjOq-LnRQCeh4UxRGJxLGX_WzWJ6M_F94ENpAL8WwI3RlHJCBsgXfLKnrIA"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-label uppercase tracking-widest text-sm">Der Grosse Keller</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 text-center px-12 bg-surface">
+<div class="max-w-3xl mx-auto space-y-12">
+<h2 class="text-5xl md:text-6xl font-headline text-white leading-tight">Werde Teil einer <br/>fünfhundertjährigen Geschichte</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+<button class="bg-primary text-on-primary px-12 py-5 font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-400 group flex items-center gap-4">
+                        Erleben Sie die Geschichte
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+<a class="text-primary font-label text-sm uppercase tracking-widest border-b border-primary/30 pb-2 hover:border-primary transition-colors" href="#">
+                        Zur Speisekarte
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-16 px-12 flex flex-col items-center gap-8 border-t border-white/5 bg-neutral-950 dark:bg-[#0e0e0e]">
+<div class="text-xl font-['Noto_Serif'] text-yellow-600 dark:text-[#e5c374] tracking-widest uppercase">
+            Auerbachs Keller Leipzig
+        </div>
+<div class="flex gap-12 font-['Manrope'] text-xs tracking-wider uppercase">
+<a class="text-neutral-500 dark:text-gray-500 hover:text-white transition-colors duration-400" href="#">Impressum</a>
+<a class="text-neutral-500 dark:text-gray-500 hover:text-white transition-colors duration-400" href="#">Datenschutz</a>
+<a class="text-neutral-500 dark:text-gray-500 hover:text-white transition-colors duration-400" href="#">Kontakt</a>
+</div>
+<div class="text-center font-['Manrope'] text-[10px] text-neutral-500 dark:text-gray-500 tracking-widest uppercase max-w-xl leading-relaxed">
+            © 1525-2024 Auerbachs Keller Leipzig. Grimmaische Str 2-4, 04109 Leipzig. +49 341 216 100
+        </div>
+</footer>
+</body></html>
